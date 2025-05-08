@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Подключение к MongoDB
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URI_DEV)
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
